@@ -11,7 +11,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
 
-# Email and phone validation functions
+# Email and phone validation functions, run [python scrappie.py -d domains.txt]
 def validate_email(email):
     regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
     return re.match(regex, email)
